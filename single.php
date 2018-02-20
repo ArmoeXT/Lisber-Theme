@@ -5,7 +5,9 @@
 			<?php comments_popup_link("<div class='mdui-chip'><span class='mdui-chip-title'>0条评论</span></div>", "<div class='mdui-chip'><span class='mdui-chip-title'>1条评论</span></div>", "<div class='mdui-chip'><span class='mdui-chip-title'>% 条评论</span></div>", '', "<div class='mdui-chip'><span class='mdui-chip-title'>评论已关闭</span></div>"); ?></span>
 			<?php the_tags('TAGS:','、', ''); ?>
 		</div>
-		<div><?php echo the_content(); ?></div>
+		<?php while ( have_posts() ) : the_post();?>
+		<div>内容:<?php the_content(); ?></div>
+		<? endwhile;?>
 	</div>
 <?php get_sidebar();?>
 <?php get_footer();?>
