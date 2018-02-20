@@ -15,28 +15,28 @@ function lingfeng_pagenavi( $range = 4 ) {
         if( !$paged ){
             $paged = 1;
         }
-        echo "<a href='".get_pagenum_link(1) ."' class='mdui-btn mdui-color-grey-800' title='跳转到首页'>首页</a>";
-        previous_posts_link("<font class='mdui-btn mdui-color-grey-800'>上一页</font>");
+        echo "<a href='".get_pagenum_link(1) ."' class='mdui-btn mdui-color-grey-800' style="margin:2px;" title='跳转到首页'>首页</a>";
+        previous_posts_link("<font class='mdui-btn mdui-color-grey-800' style="margin:2px;">上一页</font>");
         if ( $max_page >$range ) {
                 for( $i = 1; $i <= ($range +1); $i++ ) {
-                    echo "<a class='mdui-btn' href='".get_pagenum_link($i) ."'";
+                    echo "<a style="margin:2px;" class='mdui-btn' href='".get_pagenum_link($i) ."'";
                     echo " class='mdui-btn mdui-color-grey-800'";echo ">$i</a>";
                 }
                 for($i = $max_page -$range;$i <= $max_page;$i++){
-                    echo "<a href='".get_pagenum_link($i) ."'";
+                    echo "<a style='margin:2px;' href='".get_pagenum_link($i) ."'";
                     echo " class='mdui-btn mdui-color-grey-800'";echo ">$i</a>";
                     }
                     for($i = ($paged -ceil($range/2));$i <= ($paged +ceil(($range/2)));$i++){
-                        echo "<a href='".get_pagenum_link($i) ."'";
+                        echo "<a style='margin:2px;' href='".get_pagenum_link($i) ."'";
 						echo " class='mdui-btn mdui-color-grey-800'";echo ">$i</a>";
                     }
                 }
                 for($i = 1;$i <= $max_page;$i++){
-                    echo "<a href='".get_pagenum_link($i) ."'";
+                    echo "<a style='margin:2px;' href='".get_pagenum_link($i) ."'";
                     echo " class='mdui-btn mdui-color-grey-800'";echo ">$i</a>";
                 }
-        next_posts_link("<font class='mdui-btn mdui-color-grey-800'>下一页</font>");
-        echo "<a href='".get_pagenum_link($max_page) ."' class='mdui-btn mdui-color-grey-800' title='跳转到最后一页'>尾页</a>";
+        next_posts_link("<font style="margin:2px;" class='mdui-btn mdui-color-grey-800'>下一页</font>");
+        echo "<a style='margin:2px;' href='".get_pagenum_link($max_page) ."' class='mdui-btn mdui-color-grey-800' title='跳转到最后一页'>尾页</a>";
         echo "</div>\n";  
 }
 ?>
