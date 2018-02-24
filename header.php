@@ -24,7 +24,7 @@
 
 <body class="mdui-color-grey-200">
 <div id="page" class="site">
-	<div class="mdui-toolbar mdui-shadow-2" style="background:#FFFFFF;">
+	<div class="mdui-toolbar mdui-shadow-2 mdui-text-color-pink-800" style="background:#FFFFFF;">
 	  <span class="mdui-typo-title"><?php echo bloginfo('name');?></span>
 	  <div class="mdui-toolbar-spacer"></div>
 	  <a href="wp-admin" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">person</i></a>
