@@ -19,6 +19,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://cdn.bootcss.com/mdui/0.4.0/css/mdui.min.css">
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>/style.css">
 <script src="http://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"></script>
 </head>
 

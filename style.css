@@ -7,3 +7,20 @@ Author: ARMOE
 Author URI: https://www.tefws.cn
 Tags: 简约,二次元
 */
+.armoe-passage li a{
+	text-decoration:none;
+	color:#FFFFFF;
+	
+}
+.armoe-passage li{
+	list-style-type:none;
+	display:inline;
+	margin:10px 2px;
+	background:#383838;
+	border-radius:8px;
+	padding:5px;
+	box-shadow:1px 1px 1px #6C6C6C;
+}
+.armoe-passage{
+	padding-bottom:10px;
+}
