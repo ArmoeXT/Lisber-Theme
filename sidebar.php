@@ -15,7 +15,7 @@
 <div class="mdui-card mdui-shadow-5" style="border-radius:8px;margin:10px;">
 	<div class="mdui-card-actions" style="">
 		<div class="mdui-color-pink-800 mdui-text-center mdui-shadow-3" style="padding:10px;border-radius:8px;font-size:18px;">文章归档</div>
-		<div class="armoe-passage" style="margin-top:10px;">
+		<div class="lisber-passage" style="margin-top:10px;">
 			<?php wp_get_archives("type=monthly");?>
 		</div>
 	</div>

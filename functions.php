@@ -39,4 +39,5 @@ function lingfeng_pagenavi( $range = 4 ) {
         echo "<a style='margin:2px;' href='".get_pagenum_link($max_page) ."' class='mdui-btn mdui-color-grey-800' title='跳转到最后一页'>尾页</a>";
         echo "</div>\n";  
 }
+add_filter( 'widget_tag_cloud_args', 'theme_tag_cloud_args' );
 ?>
